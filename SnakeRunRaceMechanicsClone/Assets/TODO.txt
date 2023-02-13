@@ -1,0 +1,7 @@
+TODO List:
+-Create a snake controller script. AI controller and Player Controller must use that script to control the snake.
+-Use LeanTouch for input
+-Create more realistic snake body with Spline package
+-AI must use deterministic movement instead of navmesh agent. Spline follower can be used to describe snaked movement.
+-Project is inside sub folder of the repository. Move it to the root folder.
+-Crate independent UI scripts. Use events or actions to communicate with other scripts.

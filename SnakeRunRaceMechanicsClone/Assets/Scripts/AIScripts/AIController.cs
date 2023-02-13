@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 using TMPro;
 
+/// <summary>
+/// TODO Is navmesh agent needed? This would be very hard to decribe ai movement in level design.
+/// </summary>
 public class AIController : MonoBehaviour
 {
     /*It is a class structure that assigns a random number of gems to enemy game objects, allowing them to advance to the target sent to them.*/

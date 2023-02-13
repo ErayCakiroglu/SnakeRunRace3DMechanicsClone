@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
+/// <summary>
+/// TODO Remove UI from this class. Use independent UI class.
+/// </summary>
 public class ContactController : MonoBehaviour
 {
     private int gemCount = 10;
@@ -14,11 +18,14 @@ public class ContactController : MonoBehaviour
 
     void Update()
     {
+        //TODO Dont update every frame!
         gemText.text = gemCount.ToString();
     }
     /*The method that increases the gemCount number as a result of the interaction of the game object with the gem and destroys the gem it has touched, and runs the SetPlayerSpeedToZero() method as a result of the interaction with the end.*/
     private void OnTriggerEnter(Collider other)
     {
+        //TODO Use cached tags for avoiding typos
+        
         if(other.gameObject.CompareTag("Gem"))
         {
             gemCount++;
@@ -48,6 +55,7 @@ public class ContactController : MonoBehaviour
         }
     }
     /*A method that resets the speed of the player on the x-axis and z-axis and prints the text 'Game Over' on the console window.*/
+    //TODO There must be GameLost function on player. This script should not know or change anything about player.
     private void SetPlayerSpeedToZero()
     {
         PlayerController.instance.speed = 0;

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// TODO Dont need camera follower script. Use Cinemachine instead.
+/// </summary>
 public class CamFollowPlayer : MonoBehaviour
 {
     /*It is the class structure that allows the camera game object to follow the player target sent to it.*/
